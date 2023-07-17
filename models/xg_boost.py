@@ -152,36 +152,33 @@ def engineer(df):
 
 df = engineer(df)
 
-# Split the data into features X and target y
+import xgboost as xgb
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score, explained_variance_score
+from sklearn.model_selection import train_test_split
+
+# Assuming df is your DataFrame and 'Form' is your target variable
+# X = df.drop('Form', axis=1)
+# y = df['Form']
 X = df.drop('Performance Score', axis=1)
 y = df['Performance Score']
 
 # Split the data into training and test sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Create a model using RandomForestRegressor
-rf = RandomForestRegressor(n_estimators=100, random_state=42)
+# Instantiate an XGBRegressor
+xg_reg = xgb.XGBRegressor(objective ='reg:squarederror', colsample_bytree = 0.3, learning_rate = 0.1,
+                          max_depth = 5, alpha = 10, n_estimators = 100)
 
-# Fit the model to the training data
-rf.fit(X_train, y_train)
+# Fit the regressor to the training set
+xg_reg.fit(X_train,y_train)
 
-# Make predictions on the test data
-y_pred = rf.predict(X_test)
+# Make predictions on the test set
+preds = xg_reg.predict(X_test)
 
 # Calculate performance metrics
-mse = mean_squared_error(y_test, y_pred)
-mae = mean_absolute_error(y_test, y_pred)
-r2 = r2_score(y_test, y_pred)
-evs = explained_variance_score(y_test, y_pred)
+mse = mean_squared_error(y_test, preds)
+mae = mean_absolute_error(y_test, preds)
+r2 = r2_score(y_test, preds)
+evs = explained_variance_score(y_test, preds)
 
 print(f'MSE: {mse}, MAE: {mae}, R^2: {r2}, EVS: {evs}')
-
-# Get feature importance
-feature_importance = rf.feature_importances_
-
-# Match importance with feature names
-features = list(zip(X.columns, feature_importance))
-
-# Print them out
-for feature in features:
-    print(f"Feature: {feature[0]}, Importance: {feature[1]}")
