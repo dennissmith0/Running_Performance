@@ -5,7 +5,7 @@ import seaborn as sns
 import numpy as np
 
 # Load the data
-df = pd.read_csv('/activities/training_data.csv')
+df = pd.read_csv('training_data.csv')
 
 # Display the first few rows of the dataframe
 print(df.head())

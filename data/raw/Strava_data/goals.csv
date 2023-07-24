@@ -1,0 +1,21 @@
+Goal Type,Activity Type,Goal,Start Date,End Date,Segment ID,Time Period,Interval Time
+Time Goal,All Run,21600.0,"Aug 15, 2020, 5:15:42 AM","Jan 19, 2021, 12:26:12 PM",,Week
+Time Goal,Run,21600.0,"Apr 21, 2020, 7:05:27 PM","May 13, 2020, 11:24:43 PM",,Week
+Time Goal,E-Bike Ride,14400.0,"May 18, 2020, 3:21:00 PM","May 27, 2020, 1:00:07 PM",,Week
+Time Goal,Run,21600.0,"May 27, 2020, 12:58:51 PM","Aug 15, 2020, 5:15:42 AM",,Week
+Time Goal,All Run,18000.0,"Jan 19, 2021, 12:26:12 PM","Mar 26, 2021, 2:30:39 PM",,Week
+Time Goal,All Ride,7200.0,"Jan 19, 2021, 12:26:01 PM",,,Week
+Time Goal,Run,10800.0,"May 13, 2020, 7:24:43 PM","May 18, 2020, 3:50:18 PM",,Week
+Time Goal,E-Bike Ride,14400.0,"Apr 21, 2020, 7:05:33 PM","May 16, 2020, 10:34:18 PM",,Week
+Time Goal,E-Bike Ride,10800.0,"May 27, 2020, 1:00:07 PM","Sep 16, 2020, 10:33:50 PM",,Week
+Time Goal,E-Bike Ride,720000.0,"Jan 2, 2020, 8:10:57 PM","Sep 16, 2020, 10:33:50 PM",,Year
+Time Goal,Run,28800.0,"Apr 12, 2020, 3:12:09 PM","Apr 21, 2020, 3:05:27 PM",,Week
+Time Goal,Run,720000.0,"Jan 2, 2020, 8:10:43 PM","Aug 15, 2020, 5:15:42 AM",,Year
+Time Goal,Run,18000.0,"May 18, 2020, 3:50:18 PM","May 27, 2020, 12:58:51 PM",,Week
+Time Goal,All Ride,720000.0,"Sep 16, 2020, 10:33:50 PM",,,Year
+Time Goal,All Ride,10800.0,"Sep 16, 2020, 10:33:50 PM","Jan 19, 2021, 12:26:01 PM",,Week
+Time Goal,E-Bike Ride,7200.0,"Apr 12, 2020, 3:14:16 PM","Apr 21, 2020, 3:05:33 PM",,Week
+Time Goal,All Run,21600.0,"Mar 26, 2021, 2:30:39 PM",,,Week
+Time Goal,All Run,720000.0,"Aug 15, 2020, 5:15:42 AM","Jan 19, 2021, 12:26:34 PM",,Year
+Time Goal,All Run,1080000.0,"Jan 19, 2021, 12:26:34 PM",,,Year
+Time Goal,E-Bike Ride,21600.0,"May 16, 2020, 6:34:18 PM","May 18, 2020, 11:21:00 AM",,Week
